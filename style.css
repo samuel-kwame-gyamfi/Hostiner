@@ -35,3 +35,36 @@ p {
 img {
   width: 100%;
 }
+
+.navbar {
+  background-color: #047aed;
+  color: #ffff;
+
+  height: 70px;
+}
+
+.navbar a {
+  color: #ffff;
+  padding: 10px;
+  margin: 0 5px;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
