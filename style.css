@@ -48,6 +48,10 @@ img {
   padding: 10px;
   margin: 0 5px;
 }
+
+.navbar a:hover {
+  border-bottom: 2px #ffff solid;
+}
 .navbar .flex {
   justify-content: space-between;
 }
