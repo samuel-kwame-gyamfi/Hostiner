@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
+/* using the root score */
+:root {
+  --primary-color: #047aed;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -35,9 +39,9 @@ p {
 img {
   width: 100%;
 }
-
+/* styling the navbar */
 .navbar {
-  background-color: #047aed;
+  background-color: var(--primary-color);
   color: #ffff;
 
   height: 70px;
@@ -52,6 +56,22 @@ img {
 .navbar a:hover {
   border-bottom: 2px #ffff solid;
 }
+/* showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #ffff;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+/* Utilities */
 .navbar .flex {
   justify-content: space-between;
 }
@@ -71,4 +91,10 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
